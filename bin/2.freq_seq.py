@@ -1,3 +1,5 @@
+#Este programa cuenta la frecuencia de nucleótidos en una secuencia de ADN dada por el usuario
+
 secuencia = input("Ingrese una secuencia de nucleótidos: ")
 print (f'La secuencia proporcionada es: {secuencia}')
 

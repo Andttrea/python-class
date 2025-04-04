@@ -6,3 +6,6 @@ with open('data/dna_sequences.txt', 'r') as infile, open('results/dna_sequences.
 
         outfile.write  (f'>{columns[0]}\n{columns[1].upper()}\n') # upper convierte la cadena a mayúsculas
     
+
+
+    

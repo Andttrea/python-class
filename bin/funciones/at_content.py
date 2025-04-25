@@ -1,11 +1,23 @@
-def at_content(dna):
+def at_content(dna, sig_figs=2):
+    """
+    Calcula el contenido AT de una secuencia de ADN,
+    redondeando a un número específico de cifras decimales.
+    Parámetros:
+    dna (str): Secuencia de ADN (ej. 'ATGCGC')
+    sig_figs (int, opcional): número de cifras decimales (por defecto = 2)
+    Retorna:
+    float: contenido AT redondeado
+    """
     dna = dna.upper()
     length = len(dna)
     a_count = dna.count ('A')
     t_count = dna.count ('T')
     at_content = (a_count + t_count)/ length
-    print(at_content)
+    return round(at_content, sig_figs)
 
-# llamamos a la función 
-at_content("GAGAGCGGTGAGCTG")  
-at_content("gagcgagtgacgt")
+
+resultado = at_content("GAGAGCGGTGAGCTG",1) 
+print(resultado)
+
+resultado = at_content("gagcgagtgacgt")
+print(resultado)

@@ -16,6 +16,15 @@ def at_content(dna, sig_figs=2):
     return round(at_content, sig_figs)
 
 
+
+#assert lo utilizamos para comprobar que el resultado es correcto, este es un testing temporal 
+#assert at_content("ATGCGC",1) == 0.5
+#assert at_content("ATCGNNN", 1) == 0.5 
+#para resolver este último caso tendríamos que remplazar o eliminar las N's
+
+
+
+# Imprimir el resultado de la función at_content
 resultado = at_content("GAGAGCGGTGAGCTG",1) 
 print(resultado)
 

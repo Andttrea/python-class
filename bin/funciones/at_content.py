@@ -6,5 +6,6 @@ def at_content(dna):
     at_content = (a_count + t_count)/ length
     print(at_content)
 
-    at_content("GAGAGCGGTGAGCTG")  #tenemos que llamar a nuestra función 
-    at_content("gagcgagtgacgt")
+# llamamos a la función 
+at_content("GAGAGCGGTGAGCTG")  
+at_content("gagcgagtgacgt")
